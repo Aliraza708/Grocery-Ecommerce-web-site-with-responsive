@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/772d10d516.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header section -->
+    <section id="header">
+        <a href="#"><img src="./imges/logo.png" id="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <!-- <li><a href="/assest/blog.html">Blog</a></li> -->
+                <li><a href="#">About</a></li>
+                <li><a href="/add product/AddProduct.html">Add Products</a></li>
+                <li><a href="/my produc/index.html">My products</a></li>
+                <li><a href="Cart.html" id="lg-bag"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="#"><i id="serachiIcon" class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="/assest/login/index.html" id="login_btn">Login</a></li>
+                <li><a href="" id="logout_btn">Logout</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <div>
+                    <img id="useImage" src="/imges/logo.png" alt="Avatar">
+                </div>
+            </ul>
+            <!-- search icon -->
+            <div id="searchHeader">
+                <div id="search">
+                    <div id="searchInput">
+                        <input type="text" placeholder="Search">
+                        <i id="cour" class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div id="cancel">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div id="mobile">
+            <img id="useImage1" class="w-12 h-12 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                src="/imges/logo.png" alt="Avatar">
+            <i id="menuToggle" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+    <!-- scroll Section -->
+    <section id="scrollsection">
+        <div class="gallery-container">
+            <button class="scroll-btn left" onclick="scrollLeft()"></button>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="#fruit">
+
+                        <img src="./imges/scroll Images/grocerapp-fruits-vegetables-61e92c79e6a95.webp" alt="Product 1">
+                        <p>Fruits & Vegetables</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#babycare">
+                        <img src="./imges/scroll Images/grocerapp-baby-care-61eab6f86b07d.webp" alt="Product 2">
+                        <p>Baby Care</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#Beverages">
+                        <img src="./imges/scroll Images/grocerapp-beverages-61eab9642ec81.webp" alt="Product 10">
+                        <p>Beverages</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#breakfast">
+                        <img src="./imges/scroll Images/grocerapp-breakfast-essentials-6596947720406.webp"
+                            alt="Product 10">
+                        <p>Breakfast & Essentials</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#dairy">
+                        <img src="./imges/scroll Images/grocerapp-dairy-64db84521911f.webp" alt="Product 10">
+                        <p>Dairy</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#dryFruits">
+                        <img src="./imges/scroll Images/grocerapp-dry-fruit-nuts-61e94d6bb7e4e.webp" alt="Product 10">
+                        <p>Dry Fruits & Nuts</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#meat">
+                        <img src="./imges/scroll Images/grocerapp-fresh-meat-61eab6cd051b0.webp" alt="Product 10">
+                        <p>Meat & Seafood</p>
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#grocery">
+                        <img src="./imges/scroll Images/grocerapp-grocery-61e9620ce82bd.webp" alt="Product 10">
+                        <p>Grocery</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#snack">
+                        <img src="./imges/scroll Images/grocerapp-instant-food-61eaf560b6744.webp" alt="Product 10">
+                        <p>Snacks & Confectionary</p>
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#Home">
+                        <img src="./imges/scroll Images/grocerapp-home-care-624d28c2bc37b.webp" alt="Product 10">
+                        <p>Home Care</p>
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#Personal">
+                        <img src="./imges/scroll Images/grocerapp-personal-care-624d28db4d227.webp" alt="Product 10">
+                        <p>Personal care</p>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="#stationary">
+                        <img src="./imges/scroll Images/grocerapp-stationary-shop-64db850d762aa.webp" alt="Product 10">
+                        <p>Stationary Shop</p>
+                    </a>
+                </div>
+
+                <button class="scroll-btn right" onclick="scrollRight()"></button>
+            </div>
+    </section>
+
+
+    <!-- carousal section -->
+
+    <section id="carouselSection">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img src="/imges/grocerapp-dettol-66614df4c2a45.webp" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img src="/imges/grocerapp-kausar-6640fd3dcc7f7.webp" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img src="/imges/grocerapp-shan-66a0985ed8c17.jpeg" class="d-block w-100" alt="..."></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </section>
+    <!-- <select>firebase store</select> -->
+    <section id="usrProduct">
+
+
+    </section>
+
+    <section id="carouselSection">
+        <img src="/imges/delivery.webp" style="width: 100%;" alt="">
+    </section>
+
+
+    <!-- section product id -->
+    <section>
+        <div id="productIdSection">
+            <div class="para" id="fruit">
+                <h2>Fruits & Vegetables</h2>
+                <p>Fruits, Vegetables & Exotic Vegetables</p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/vegtablex/grocerapp-english-vegetables-herbs-643000b7d59a8.webp"
+                            alt="" srcset="">
+                        <p>Exotic Vegetables</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/vegtablex/grocerapp-fruits-61e92d02735bb.webp" alt="" srcset="">
+                        <p>Fruits</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/vegtablex/grocerapp-vegetables-61e92cb8bb657.webp" alt="" srcset="">
+                        <p>Vegetables</p>
+                    </a></div>
+            </div>
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="breakfast">
+                <h2>Breakfast Essentials</h2>
+                <p>All your breakfast needs from eggs to cheese</p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/breakfast/grocerapp-bread-crumbs-64dcc5819296b.webp" alt="" srcset="">
+                        <p>Bread & Crumbs</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/breakfast/grocerapp-buns-64d09a68c289d.webp" alt="" srcset="">
+                        <p>Buns</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/breakfast/grocerapp-cakes-64dcca82bcc8b.webp" alt="" srcset="">
+                        <p>Cakes</p>
+                    </a></div>
+                <div><a href="#"><img src="/imges/breakfast/grocerapp-cereals-659694a9314cf.webp" alt="" srcset="">
+                        <p>Cereals</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/breakfast/grocerapp-eggs-61e95ac1ae97f.webp" alt="" srcset="">
+                        <p>Eggs</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/breakfast/grocerapp-roti-wraps-pita-64d09ac125597.webp
+                    " alt="" srcset="">
+                        <p>Roti & Tortills</p>
+                    </a></div>
+                <div> <a href="#"><img src="imges/breakfast/grocerapp-rusks-64dcca75cf606.webp" alt="" srcset="">
+                        <p>Rusks</p>
+                    </a></div>
+                <div> <a href="#"><img src="imges/breakfast/grocerapp-oats-porridge-64e34cf30e7d4.webp" alt=""
+                            srcset="">
+                        <p>Oats & Porridge</p>
+                    </a></div>
+
+                <div> <a href="#"><img src="imges/breakfast/grocerapp-spreads-64dcc75d0edde.webp" alt="" srcset="">
+                        <p>Spreads</p>
+                    </a></div>
+                <div> <a href="#"><img src="imges/breakfast/grocerapp-syrups-64dcc77810e9c.webp" alt="" srcset="">
+                        <p>Syrups</p>
+                    </a></div>
+            </div>
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="dairy">
+                <h2>Dairy</h2>
+                <p>All sort of Milk, Cream & Cheese</p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/dairy/grocerapp-cream-64dcaf24213e2.webp" alt="" srcset="">
+                        <p>Cream</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/dairy/grocerapp-cheese-61e95b2a01068.webp" alt="" srcset="">
+                        <p>Cheese</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/dairy/grocerapp-raw-fresh-milk-64dca9154de75.webp" alt="" srcset="">
+                        <p>Fresh Milk</p>
+                    </a></div>
+
+                <div><a href="#"><img src="/imges/dairy/grocerapp-butter-64dcb70cb7167.webp" alt="" srcset="">
+                        <p>Butter</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/dairy/grocerapp-uht-milk-659694dcda3a0.webp" alt="" srcset="">
+                        <p>UTH Milk</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/dairy/grocerapp-yogurt-lassi-64dca9b2193ae.webp" alt="" srcset="">
+                        <p>Yougurt & Lassi</p>
+                    </a></div>
+
+            </div>
+
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="grocery">
+                <h2>Grocery</h2>
+                <p>Atta, Daal, Chawal, Ghee & Oil</p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/grocery/grocerapp-baking-desserts-64e48f657502a.webp" alt=""
+                            srcset="">
+                        <p>Baking & Desserts</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/grocery/grocerapp-cans-jars-64e33cc691f8b.webp" alt="" srcset="">
+                        <p>Cans & Jars</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/grocery/grocerapp-daalain-rice-flour-61e94a7d6ddc1.webp" alt=""
+                            srcset="">
+                        <p>Rice & Flour</p>
+                    </a></div>
+
+                <div><a href="#"><img src="/imges/grocery/grocerapp-herbs-spices-64e4b92d44a88.webp" alt="" srcset="">
+                        <p>Herbs & Spices</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/grocery/grocerapp-noodles-pasta-64e33ceadede9.webp" alt="" srcset="">
+                        <p>Noodles & Pasta</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/grocery/grocerapp-oil-ghee-663a7d55c1ad1.webp" alt="" srcset="">
+                        <p>Oil & Ghee</p>
+                    </a></div>
+
+            </div>
+
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="meat">
+                <h2>Meat & Seafood</h2>
+                <p>Mutton, Beef, Chicken, Fish</p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/meat/grocerapp-beef-61e9438a91af2.webp" alt="" srcset="">
+                        <p>Beef</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/meat/grocerapp-boneless-fish-61e944f72fd17.webp" alt="" srcset="">
+                        <p>Fish</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/meat/grocerapp-chicken-61e92dd43796d.webp" alt="" srcset="">
+                        <p>Chicken</p>
+                    </a></div>
+
+                <div><a href="#"><img src="/imges/meat/grocerapp-marinated-chicken-61e943bc348a1.webp" alt="" srcset="">
+                        <p>Marinated & Chicken</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/meat/grocerapp-mutton-61e92dff00785.webp" alt="" srcset="">
+                        <p>Mutton</p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="stationary">
+                <h2>Stationery Shop</h2>
+                <p>Pens, Pencils, Erasers, Glue, Toys, Office Supplies</p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/Stationery Shop/grocerapp-erasers-removers-64db86bd65985.webp" alt=""
+                            srcset="">
+                        <p>Erasers & Removers</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/Stationery Shop/grocerapp-learning-books-64e8a14b76150.webp" alt=""
+                            srcset="">
+                        <p>Learing Book</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/Stationery Shop/grocerapp-measuring-tools-64dca65fd8dd7.webp" alt=""
+                            srcset="">
+                        <p>measuring Tools</p>
+                    </a></div>
+
+                <div><a href="#"><img src="/imges/Stationery Shop/grocerapp-notebooks-papers-64db870a6bd7c.webp" alt=""
+                            srcset="">
+                        <p>Notebooks & Papers</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/Stationery Shop/grocerapp-toys-64dcb21a88be6.webp" alt="" srcset="">
+                        <p>Gaming & Toys</p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="snack">
+                <h2>Snacks & Confectionary</h2>
+                <p>Biscuits, Noodles, Chocolates, Nimko</p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/snack/grocerapp-biscuits-cookies-61e9692f002f4.webp" alt="" srcset="">
+                        <p>Biscuits & Cookies</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/snack/grocerapp-candies-64de192a8c3ae.webp" alt="" srcset="">
+                        <p>Candies</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/snack/grocerapp-chips-nimko-61e96942a3b50.webp" alt="" srcset="">
+                        <p>Chips & Nimko</p>
+                    </a></div>
+
+                <div><a href="#"><img src="/imges/snack/grocerapp-chocolates-61e96953942d3.webp" alt="" srcset="">
+                        <p>Chocolates</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/snack/grocerapp-instant-noodles-64de1aa9ab299.webp" alt="" srcset="">
+                        <p>Instant Noodles</p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="Beverages">
+                <h2>Beverages</h2>
+                <p>Tea, Cold Drinks, Sharbat, Juices & More</p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/Beverages/grocerapp-coffee-64e368b4df350.webp" alt="" srcset="">
+                        <p>Coffee</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/Beverages/grocerapp-tea-61fa4104b8f51.webp" alt="" srcset="">
+                        <p>Tea</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/Beverages/grocerapp-energy-drinks-61e966c8c0953.webp" alt=""
+                            srcset="">
+                        <p>Energy Drinks</p>
+                    </a></div>
+
+                <div><a href="#"><img src="/imges/Beverages/grocerapp-instant-drinks-64e3632c5d076.webp" alt=""
+                            srcset="">
+                        <p>Instant Drinks</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/Beverages/grocerapp-juices-659695122120a.webp" alt="" srcset="">
+                        <p>Juices</p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="Home">
+                <h2>Home Care</h2>
+                <p>Detergents, Tissue, Repellents, Laundry </p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/Home Care/grocerapp-bath-bedding-6465269808265.webp" alt="" srcset="">
+                        <p>Bath & Bedding</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/Home Care/grocerapp-fabric-care-663a7cdd74567.webp" alt="" srcset="">
+                        <p>Fabric Care</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/Home Care/grocerapp-floor-bath-cleaning-620cc3233ddab.webp" alt=""
+                            srcset="">
+                        <p>Cleaning Essentials</p>
+                    </a></div>
+
+                <div><a href="#"><img src="/imges/Home Care/grocerapp-home-essentials-644a5553386e8.webp" alt=""
+                            srcset="">
+                        <p>Home Essentials</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/Home Care/grocerapp-insect-pest-control-644a53bc4f7c9.webp" alt=""
+                            srcset="">
+                        <p>Insect & Pest Control</p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="Personal">
+                <h2>Personal Care</h2>
+                <p>Male & Female Care, Shampoo, Soaps & more </p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/Personal Care/grocerapp-dental-care-61e94c9e432c5.webp" alt=""
+                            srcset="">
+                        <p>Dental Care</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/Personal Care/grocerapp-hair-care-61ee547618b42.webp" alt=""
+                            srcset="">
+                        <p>Hair Care</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/Personal Care/grocerapp-shoes-polish-brush-620cc1ec2ec92.webp" alt=""
+                            srcset="">
+                        <p>Shoes Polish & Brush</p>
+                    </a></div>
+
+                <div><a href="#"><img src="/imges/Personal Care/grocerapp-soap-hand-wash-shower-6614eb148dcf0.webp"
+                            alt="" srcset="">
+                        <p>Soap & Hand Wash </p>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="babycare">
+                <h2>Baby Care</h2>
+                <p>Diapers, Lotions, Baby Food </p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/babycare/grocerapp-feeding-accessories-6401790cdd51b.webp" alt=""
+                            srcset="">
+                        <p>Feeding Accessories</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/babycare/grocerapp-diaper-wipes-61e954e46c023.webp" alt="" srcset="">
+                        <p>Diapers & Wipes</p>
+                    </a>
+                </div>
+                <div> <a href="#"><img src="/imges/babycare/grocerapp-food-milk-61e954f963a5d.webp" alt="" srcset="">
+                        <p>Food & Milk</p>
+                    </a></div>
+
+
+
+
+
+            </div>
+        </div>
+        <div id="productIdSection">
+            <div class="para" id="dryFruits">
+                <h2>Dry Fruit & Nuts</h2>
+                <p>Peanuts, cashew nuts, almonds etc</p>
+            </div>
+            <div class="imgSection">
+                <div><a href="#"><img src="/imges/Dry Fruit & Nuts/grocerapp-dry-fruits-nuts-61eab973f31ee.webp" alt=""
+                            srcset="">
+                        <p>Dry Fruits</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="/imges/Dry Fruit & Nuts/grocerapp-nuts-63215fdd163d9.webp" alt="" srcset="">
+                        <p>Nuts</p>
+                    </a>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- footer -->
+    <section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h4>About Us</h4>
+                    <p>Your go-to store for fresh groceries delivered to your doorstep.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@grocery.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Grocery. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of
+                        Service</a></p>
+            </div>
+        </footer>
+        <button id="back-to-top">↑</button>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
